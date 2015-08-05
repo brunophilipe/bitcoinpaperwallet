@@ -120,6 +120,13 @@ function setCryptoCurrency(toThis) {
 		window.compressedWIFPrefix = 'c';
 		document.title = 'Bitcoin TESTNET paper wallet generator';
 		break;
+	case 'Vertcoin':
+		window.networkVersion = 0x47;
+		window.privateKeyPrefix = 0xC7;
+		window.WIFPrefix = '7';
+		window.compressedWIFPrefix = 'W';
+		document.title = 'Vertcoin paper wallet generator';
+		break;
 	default:
 	  alert ('Invalid cryptocurrency "' + toThis + '" at initialization. Defaulting to Bitcoin.');
 	  setCryptoCurrency('Bitcoin');		
@@ -146,6 +153,9 @@ switch (myDesign) {
 		break;
 	case 'alt-testnet':
 		setCryptoCurrency('Testnet');
+		break;
+	case 'alt-vertcoin':
+		setCryptoCurrency('Vertcoin');
 		break;
 	default:
 	setCryptoCurrency('Bitcoin');
@@ -10410,7 +10420,7 @@ Bitcoin.Util = {
               <span><a href="?culture=fr" id="culturefr">Français</a></span> -->
               &nbsp;
           	</div>
-			<div id="tagline">Open Source JavaScript <script type="text/javascript">document.write(window.currencyName);</script> Paper Wallet Generator <span>Updated Jan 31, 2015</span></div>
+			<div id="tagline">Open Source JavaScript <script type="text/javascript">document.write(window.currencyName);</script> Paper Wallet Generator <span>Updated Aug 05, 2015</span></div>
 			<div id="tagsite">For help, security tips, or wallet making supplies visit <a href="https://bitcoinpaperwallet.com">bitcoinpaperwallet.com</a></div>
             <div id="tagwarning"></div>
 			<div id="seedpoolarea"><textarea rows="16" cols="62" id="seedpool"></textarea></div>
@@ -10520,12 +10530,12 @@ Bitcoin.Util = {
                             <option value="chinese-new-year">Chinese New Year Bitcoin (Simplified Chinese)</option>
                             <option value="traditional-chinese-new-year">Chinese New Year Bitcoin (Traditional Chinese)</option>
                             <option value="hobbit">"HobBitcoin" :)</option>
-	                        <option value="vertcoin">Vertcoin (does not generate keys!!!)</option>
                             <option value="custom">Your own custom Bitcoin design</option>
                             <option value="default">--- Other Cryptocurrencies ---</option>
                             <option value="alt-litecoin">Litecoin LTC</option>
                             <option value="alt-dogecoin">Dogecoin DOGE</option>
                             <option value="counterparty">Counterparty XCP</option>
+	                        <option value="alt-vertcoin">Vertcoin VTC</option>
                             <option value="alt-testnet">"Testnet"</option>
                           </select>
                           <select name="langPicker" id="langPicker" style="font-size: 12px; display: inline;" onChange="setDesign('default', false, this.value);">
