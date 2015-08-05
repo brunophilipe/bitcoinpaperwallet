@@ -6,7 +6,7 @@ Then just look for the button that says "Download ZIP". Look to your right -->
 *** bitcoinpaperwallet.com ***
 
 This project is a fork of bitaddress.org, the original trustworthy
-JavaScript powered offline bitcoin address generator. 
+JavaScript powered offline bitcoin address generator.
 
 This attractive paper wallet design is two-sided and folds up to
 hide the private key. Optional tamper-evident hologram tape and/or a live-boot
@@ -18,7 +18,7 @@ well as support for creating wallets using "vanity keys", passphrases ("brain wa
 or even rolling dice or shuffling cards.
 
 This generator also includes support and designs for making
-Litecoin and Dogecoin wallets.
+Litecoin, Dogecoin and Vertcoin wallets.
 
 Use the "Verify or Decrypt" tab to decrypt a BIP38 password-encrypted wallet, check the
 integrity of any private key, or even duplicate an exising wallet by scanning its
@@ -101,6 +101,10 @@ for personal use.
 http://cantonbecker.com
 canton@gmail.com
 
+Vertcoin support and wallet design by:
+– Bruno Philipe
+https://www.brunophilipe.com
+hello@brunophilipe.com
 
 
 ----------------------------------------------------------
